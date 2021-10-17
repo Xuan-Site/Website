@@ -94,8 +94,13 @@
         }
 
         function keyLogin() {
-            if (event.keyCode == 13) //enter的鍵值為13
+            if (event.keyCode == 13) {//enter的鍵值為13
                 document.getElementById("b2").click(); //觸動按鈕的點擊
+                document.getElementById("b1").disabled = false;
+            }
+            else {
+                document.getElementById("b1").disabled = true;
+            }
         }
         function b2_onclick() {
             
@@ -164,7 +169,7 @@
             style="position: absolute; top: 539px; left: 1259px; height: 66px;" type="text" 
             onclick="return t9_onclick()" disabled="disabled" />
        <input id="b1" style="position: absolute; top: 539px; left: 1421px; height: 73px; width: 81px; background-color: #808080;" 
-       type="button" value="結帳"  onclick="location.href='銘謝惠顧.htm'" /></p>
+       type="button" value="結帳" disabled onclick="location.href='銘謝惠顧.htm'" /></p>
 
        <h1>
     <p style="width: 303px; position: absolute; top: 402px; left: 1256px; margin-top: 0px; height: 81px;"> 
